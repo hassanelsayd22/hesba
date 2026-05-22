@@ -1,6 +1,6 @@
 import Heading from "../typography/Heading";
 import SubHeading from "../typography/SubHeading";
-import UIButton from "../ui/Button";
+import UIButton from "@/components/ui/UIButton";
 
 const ReportsHeader = () => {
   return (

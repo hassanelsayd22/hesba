@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import UIButton from "@/components/ui/Button";
+import UIButton from "@/components/ui/UIButton";
 import IconHolder from "@/components/ui/IconHolder";
 import Title from "@/components/typography/Title";
 import Pagination from "../Pagination";

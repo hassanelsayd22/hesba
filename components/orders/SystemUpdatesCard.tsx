@@ -1,4 +1,4 @@
-import UIButton from "@/components/ui/Button";
+import UIButton from "@/components/ui/UIButton";
 import Image from "next/image";
 
 export default function SystemUpdatesCard() {

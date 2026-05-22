@@ -1,6 +1,6 @@
 import Heading from "@/components/typography/Heading";
 import SubHeading from "@/components/typography/SubHeading";
-import UIButton from "@/components/ui/Button";
+import UIButton from "@/components/ui/UIButton";
 
 export default function InventoryHeader() {
   return (

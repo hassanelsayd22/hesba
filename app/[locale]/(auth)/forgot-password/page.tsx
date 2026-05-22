@@ -2,7 +2,7 @@
 import InputController from "@/components/controllers/InputController";
 import Heading from "@/components/typography/Heading";
 import SubHeading from "@/components/typography/SubHeading";
-import UIButton from "@/components/ui/Button";
+import UIButton from "@/components/ui/UIButton";
 import IconHolder from "@/components/ui/IconHolder";
 import { borderClass } from "@/constants/utilityClasses";
 import clsx from "clsx";

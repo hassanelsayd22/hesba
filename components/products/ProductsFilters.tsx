@@ -1,4 +1,4 @@
-import UIButton from "@/components/ui/Button";
+import UIButton from "@/components/ui/UIButton";
 import IconHolder from "@/components/ui/IconHolder";
 
 export default function ProductsFilters() {

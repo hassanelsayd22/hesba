@@ -1,6 +1,6 @@
 import Title from "@/components/typography/Title";
 import SubHeading from "@/components/typography/SubHeading";
-import UIButton from "@/components/ui/Button";
+import UIButton from "@/components/ui/UIButton";
 import IconHolder from "@/components/ui/IconHolder";
 
 export default function ProductsInsights() {

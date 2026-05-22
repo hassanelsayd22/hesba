@@ -5,7 +5,7 @@ import BrutalTable from "@/components/table";
 import Heading from "@/components/typography/Heading";
 import SubHeading from "@/components/typography/SubHeading";
 import Title from "@/components/typography/Title";
-import UIButton from "@/components/ui/Button";
+import UIButton from "@/components/ui/UIButton";
 import IconHolder from "@/components/ui/IconHolder";
 import { useMemo } from "react";
 import { useForm } from "react-hook-form";

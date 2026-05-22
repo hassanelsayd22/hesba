@@ -1,6 +1,6 @@
 import SubHeading from "@/components/typography/SubHeading";
 import Title from "@/components/typography/Title";
-import UIButton from "@/components/ui/Button";
+import UIButton from "@/components/ui/UIButton";
 import Image from "next/image";
 
 const IMAGE_PATH =
