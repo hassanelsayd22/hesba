@@ -9,6 +9,7 @@ import UIButton from "@/components/ui/UIButton";
 import IconHolder from "@/components/ui/IconHolder";
 import { useMemo } from "react";
 import { useForm } from "react-hook-form";
+import DatePickerController from "@/components/controllers/DatePickerController";
 
 const stats = [
   {
@@ -287,11 +288,10 @@ export default function FinanceDashboardPage() {
                 />
               </div>
 
-              <InputController
+              <DatePickerController
                 control={control}
                 name="date"
                 label="التاريخ"
-                type="date"
               />
 
               <UIButton className="w-full border border-primary bg-primary-container py-4 text-base text-white hover:bg-primary">

@@ -4,6 +4,7 @@ import UIButton from "@/components/ui/UIButton";
 import IconHolder from "@/components/ui/IconHolder";
 import Title from "@/components/typography/Title";
 import InputController from "../controllers/InputController";
+import SelectController from "../controllers/SelectController";
 
 export default function CreateOrderCard() {
   const { control } = useForm({});
@@ -46,15 +47,19 @@ export default function CreateOrderCard() {
           />
         </div>
 
-        <div>
-          <label className="block text-sm font-bold mb-1">طريقة الشحن</label>
-
-          <select className="w-full border border-on-surface p-2 bg-white">
-            <option value="express">توصيل سريع</option>
-            <option value="standard">توصيل قياسي</option>
-            <option value="pickup">استلام من الفرع</option>
-          </select>
-        </div>
+        <SelectController
+          control={control}
+          name="shipping_method"
+          label="طريقة التوصيل"
+          options={[
+            { name: "express", label: "شحن سريع" },
+            { name: "standard", label: "شحن قياسي" },
+            { name: "pickup", label: "إستلام من الفرع" },
+          ]}
+          getOptionLabel={(o) => o.label}
+          getOptionValue={(o) => o.name}
+          placeholder="طريقة التوصيل"
+        />
 
         <UIButton
           className="w-full bg-primary text-white shadow-none!"

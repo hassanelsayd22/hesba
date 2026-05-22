@@ -4,6 +4,8 @@ import UIButton from "@/components/ui/UIButton";
 import IconHolder from "@/components/ui/IconHolder";
 import Title from "@/components/typography/Title";
 import BrutalTable from "../table";
+import SelectController from "../controllers/SelectController";
+import { useForm } from "react-hook-form";
 
 const data = [
   {
@@ -23,6 +25,7 @@ const data = [
 ];
 
 export default function OrdersTable() {
+  const { control } = useForm();
   const columns = [
     {
       header: "رقم الطلب",
@@ -83,13 +86,19 @@ export default function OrdersTable() {
         <Title>جدول الطلبات الحديثة</Title>
 
         <div className="flex gap-2">
-          <UIButton
+          <SelectController
+            control={control}
+            name="filter_by"
+            options={[
+              { name: "order_id", label: "رقم الطلب" },
+              { name: "customer", label: "العميل" },
+              { name: "date", label: "التاريخ" },
+            ]}
+            getOptionLabel={(o) => o.label}
+            getOptionValue={(o) => o.name}
+            placeholder="تصفية"
             iconName="filter_list"
-            iconPosition="start"
-            className="shadow-none! bg-white! text-slate-800!"
-          >
-            تصفية
-          </UIButton>
+          />
 
           <UIButton
             iconName="download"
