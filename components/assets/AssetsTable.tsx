@@ -1,5 +1,5 @@
 import Title from "../typography/Title";
-import UIButton from "../ui/Button";
+import UIButton from "@/components/ui/UIButton";
 import BrutalTable from "../table";
 import IconHolder from "../ui/IconHolder";
 import Pagination from "../Pagination";
